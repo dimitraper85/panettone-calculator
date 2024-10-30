@@ -1,0 +1,14 @@
+<h2>Hello!</h2>
+
+<p><%= link_to "Home", root_path %></p>
+<form action="calculator">
+  <input name="flour_grams"type="text" placeholder="flour in grams" value="<%=params[:flour_grams]%>">
+    <input name="water_grams"type="text" placeholder="water in grams" value="<%=params[:water_grams]%>">
+  <input type="submit">
+</form>
+
+
+<ul>
+  <li>Your flour is <%= @flour %></li>
+  <li>Your water is <%= @water %></li>
+</ul>
